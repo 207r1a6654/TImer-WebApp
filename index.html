@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WfqpMfr+fGf1xv4W8Wqn6TVnE7X/uJf0xGo2ZCHgko3upS0F0bAn7Ii3+0t/6Aci7ZSiht5XTFAY4fW4tL+Dgg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <i class="fa-solid fa-hourglass"></i>&nbsp;&nbsp;<b>Timer<b>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="clock2.html">Clock</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Timer</h1>
+    <div class="input-section">
+      <span class="timerbox">
+        <span id="days" class="timer-value">00</span>
+        <br><br>
+        <label style="color:white;">Days</label>
+      </span>
+      <span class="timerbox">
+        <span id="hours" class="timer-value">00</span> 
+         <br><br>
+        <label style="color:white;">Hours</label>
+      </span>
+      <span class="timerbox">        
+        <span id="minutes" class="timer-value">00</span>
+        <br><br>
+        <label style="color:white;">Minutes</label>
+      </span>
+      <span class="timerbox">
+        <span id="seconds" class="timer-value">00</span>
+        <br><br>
+        <label style="color:white;">Seconds</label>        
+      </span>
+    </div>
+    <br><br>
+    <div class="input-section">
+      <input type="text" id="daysInput">
+      <input type="text" id="hoursInput">
+      <input type="text" id="minutesInput">
+      <input type="text" id="secondsInput">
+    </div>
+    <br><br>
+    
+    <div class="button-section">
+      <button id="settimer" onclick="setTimer()">Set Timer</button>
+      <button id="resume" onclick="startTimer()">Start/Resume</button>
+      <button id="pause" onclick="pauseTimer()">Pause</button>
+      <button id="reset" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <button id="instructionsBtn" onclick="toggleInstructions()">Click for Instructions</button>
+  </div>
+
+  <div class="footer" id="instructions" style="display: none;">
+    <h2>INSTRUCTIONS</h2>
+    <ol>
+      <li>Enter the values in the inputs.</li>
+      <li>Press the "Set Timer" button to set the timer.</li>
+      <li>Press the "Start/Resume" button to start or resume the timer.</li>
+      <li>Press the "Pause" button if you want to pause the timer.</li>
+      <li>Press the "Start/Resume" button to resume the timer after pausing.</li>
+      <li>Press the "Reset" button to reset the values.</li>
+    </ol>
+  </div>
+
+  <script src="https://kit.fontawesome.com/2448b0d509.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
